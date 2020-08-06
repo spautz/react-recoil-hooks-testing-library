@@ -24,7 +24,7 @@
     "prepare": "yarn build",
     "prepublish": "yarn build",
     "release": "standard-version && yarn publish --non-interactive",
-    "test": "yarn jest",
+    "test": "yarn jest --passWithNoTests",
     "watch": "yarn rollup -c rollup.config.js --watch"
   },
   "devDependencies": {
