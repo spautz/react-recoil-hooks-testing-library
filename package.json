@@ -18,7 +18,7 @@
   "scripts": {
     "build": "yarn clean && yarn rollup -c rollup.config.js",
     "clean": "rm -rf dist",
-    "lint": "eslint \"./src/**/*.{ts,tsx}\"",
+    "lint": "eslint --no-ignore \"./src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix",
     "prebuild": "yarn lint && yarn test",
     "prepare": "yarn build",
